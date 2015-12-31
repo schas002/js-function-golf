@@ -72,6 +72,11 @@
 <p>Or you can just download <a href="http://schas002.github.com/js-function-golf/js-function-golf.js">http://schas002.github.com/js-function-golf/js-function-golf.js</a> and just import <code>http://path.to/js-function-golf.js</code> replacing the site <code>http://path.to/</code> with the directory where <code>js-function-golf.js</code> is.</p>
 
 <h2>
+<a id="code-golf-rules" class="anchor" href="#code-golf-rules" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code golf rules</h2>
+
+<p>Currently the golden rule is, <strong>only functions allowed are JS function golf functions</strong>, so <code>i2s(123)</code> instead of <code>123.toString()</code>. Any other structures of JS are allowed.</p>
+
+<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>Licensed under the ISC License. The full license follows.</p>
@@ -113,6 +118,51 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
 </h3>
 
 <p>Appends to the body of the document JavaScript specified in the file the address of which you gave to <code>_</code>.</p>
+
+<h3>
+<a id="pdata" class="anchor" href="#pdata" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>p(data)</code>
+</h3>
+
+<p>Prints to the console whatever you gave to <code>p</code>.</p>
+
+<h4>
+<a id="variations" class="anchor" href="#variations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variations</h4>
+
+<p><code>p2b</code> instead alerts the user with the data.</p>
+
+<h3>
+<a id="ynquestion" class="anchor" href="#ynquestion" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>yn(question)</code>
+</h3>
+
+<p>Asks the user whatever you gave to <code>yn</code> and returns the answer they gave, as a boolean. The answer is either "Yes" or "No".</p>
+
+<h4>
+<a id="variations-1" class="anchor" href="#variations-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variations</h4>
+
+<p><code>yn2i</code> instead returns an integer ("Yes" is 1, "No" is 0).</p>
+
+<h3>
+<a id="iquestion" class="anchor" href="#iquestion" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>i(question)</code>
+</h3>
+
+<p>Asks the user whatever you gave to <code>i</code> and returns the answer they gave. The answer is a string.</p>
+
+<h4>
+<a id="variations-2" class="anchor" href="#variations-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variations</h4>
+
+<p><code>iai</code> instead parses the answer as an integer that is returned.</p>
+
+<h3>
+<a id="i2sdata" class="anchor" href="#i2sdata" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>i2s(data)</code>
+</h3>
+
+<p>Converts whatever you gave to <code>i2s</code> to a string.</p>
+
+<h3>
+<a id="s2idata" class="anchor" href="#s2idata" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>s2i(data)</code>
+</h3>
+
+<p>Converts a string you gave to <code>s2i</code> to an integer.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/schas002">schas002</a></p>
