@@ -16,6 +16,33 @@ function _(address) {
 }
 
 /**
+ * i - the input function
+ * @param question to ask
+ * @return the answer to the question
+ */
+function i(question) {
+  return prompt(question);
+}
+
+/**
+ * i2s - the item to string function
+ * @param data to convert
+ * @return the data converted to string
+ */
+function i2s(data) {
+  return data.toString();
+}
+
+/**
+ * iai - the input an integer function
+ * @param question to ask
+ * @return the answer to the question converted to integer
+ */
+function iai(question) {
+  return i(question).parseInt();
+}
+
+/**
  * p - the print to console function
  * @param data to print
  */
@@ -29,6 +56,15 @@ function p(data) {
  */
 function p2b(data) {
   alert(data);
+}
+
+/**
+ * s2i - the string to integer function
+ * @param data to convert
+ * @return the data converted to integer
+ */
+function s2i(data) {
+  return data.parseInt();
 }
 
 /**
@@ -47,41 +83,4 @@ function yn(question) {
  */
 function yn2i(question) {
   return yn(question)? 1 : 0;
-}
-
-/**
- * i - the input function
- * @param question to ask
- * @return the answer to the question
- */
-function i(question) {
-  return prompt(question);
-}
-
-/**
- * iai - the input an integer function
- * @param question to ask
- * @return the answer to the question converted to integer
- */
-
-function iai(question) {
-  return i(question).parseInt();
-}
-
-/**
- * s2i - the string to integer function
- * @param data to convert
- * @return the data converted to integer
- */
-function s2i(data) {
-  return data.parseInt();
-}
-
-/**
- * i2s - the item to string function
- * @param data to convert
- * @return the data converted to string
- */
-function i2s(data) {
-  return data.toString();
 }
