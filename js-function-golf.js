@@ -51,11 +51,20 @@ function p(data) {
 }
 
 /**
- * p2b - the print to browser function
+ * p2a - the print to alert function
  * @param data to print
  */
-function p2b(data) {
+function p2a(data) {
   alert(data);
+}
+
+/**
+ * p2b - the print to browser function
+ * @param data to print
+ * @deprecated in favor of p2a
+ */
+function p2b(data) {
+  p2a(data);
 }
 
 /**
