@@ -90,6 +90,15 @@ function s2i(data) {
 }
 
 /**
+ * sl - the string length function
+ * @param data to measure
+ * @return the length of data
+ */
+function sl(data) {
+  return data.length;
+}
+
+/**
  * yn - the yes/no function
  * @param question to ask
  * @return the answer to the question
