@@ -59,6 +59,19 @@ function p2b(data) {
 }
 
 /**
+ * pr - the prime function
+ * @param number to be judged
+ * @return the answer to the question: is number prime?
+ */
+function pr(number) {
+  for(var i = 2; i < n; i++) {
+    if(number % i == 0) return 0;
+  }
+  // loop fell through without finding a factor
+  return 1;
+}
+
+/**
  * s2i - the string to integer function
  * @param data to convert
  * @return the data converted to integer
