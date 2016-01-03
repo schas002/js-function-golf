@@ -177,6 +177,73 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
 </h3>
 
 <p>Measures the length of the string you gave to <code>sl</code>.</p>
+
+<h3>
+<a id="slocdata-query" class="anchor" href="#slocdata-query" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>sloc(data, query)</code>
+</h3>
+
+<p>The <code>sloc()</code> method returns the index of (the position of) the first occurrence of a specified text in a string.</p>
+
+<h3>
+<a id="silocdata-query" class="anchor" href="#silocdata-query" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>siloc(data, query)</code>
+</h3>
+
+<p>The <code>siloc()</code> method returns the index of the last occurrence of a specified text in a string.</p>
+
+<h3>
+<a id="ssdata-query" class="anchor" href="#ssdata-query" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>ss(data, query)</code>
+</h3>
+
+<p>The <code>ss()</code> method searches a string for a specified value and returns the position of the match.</p>
+
+<h3>
+<a id="ssl-subs-subsbl" class="anchor" href="#ssl-subs-subsbl" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>ssl</code>, <code>subs</code>, <code>subsbl</code>
+</h3>
+
+<p>There are 3 methods for extracting a part of a string:</p>
+
+<ul>
+<li><p><code>ssl()</code> extracts a part of a string and returns the extracted part in a new string. The method takes 3 parameters: the initial string, the starting index (position), and the ending index (position).</p></li>
+<li><p><code>subs()</code> is similar to <code>ssl()</code>. The difference is that <code>subs()</code> cannot accept negative indexes.</p></li>
+<li><p><code>subsbl()</code> is similar to <code>ssl()</code>. The difference is that the second parameter specifies the length of the extracted part.</p></li>
+</ul>
+
+<h3>
+<a id="srdata-query-replacement" class="anchor" href="#srdata-query-replacement" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>sr(data, query, replacement)</code>
+</h3>
+
+<p>The <code>sr()</code> method replaces a specified value with another value in a string.</p>
+
+<h3>
+<a id="s2uc-s2lc" class="anchor" href="#s2uc-s2lc" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>s2uc</code>, <code>s2lc</code>
+</h3>
+
+<p>A string is converted to upper case with <code>s2uc()</code>.</p>
+
+<p>A string is converted to lower case with <code>s2lc()</code>.</p>
+
+<h3>
+<a id="sccfirst-second" class="anchor" href="#sccfirst-second" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>scc(first, second)</code>
+</h3>
+
+<p><code>scc()</code> joins two or more strings.</p>
+
+<h3>
+<a id="scha-schca" class="anchor" href="#scha-schca" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>scha</code>, <code>schca</code>
+</h3>
+
+<p>There are 2 safe methods for extracting string characters:</p>
+
+<ul>
+<li><p>The <code>scha()</code> method returns the character at a specified index (position) in a string.</p></li>
+<li><p>The <code>schca()</code> method returns the unicode of the character at a specified index in a string.</p></li>
+</ul>
+
+<h3>
+<a id="sspldata-separator" class="anchor" href="#sspldata-separator" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>sspl(data, separator)</code>
+</h3>
+
+<p>A string can be converted to an array with the <code>sspl()</code> method.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/schas002">schas002</a></p>
@@ -184,6 +251,6 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script src="js-function-golf.js"></script>
+    
   </body>
 </html>
