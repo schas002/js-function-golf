@@ -90,12 +90,144 @@ function s2i(data) {
 }
 
 /**
+ * s2lc - the string to lower case function
+ * @param data to convert
+ * @return the data converted to lower case
+ */
+function s2lc(data) {
+  return data.toLowerCase();
+}
+
+/**
+ * s2uc - the string to upper case function
+ * @param data to convert
+ * @return the data converted to upper case
+ */
+function s2uc(data) {
+  return data.toUpperCase();
+}
+
+/**
+ * scc - the string concatenate function
+ * @param first string
+ * @param second string
+ * @return the strings concatenated
+ */
+function scc(first, second) {
+  return first.concat(second);
+}
+
+/**
+ * scha - the string character lookup function
+ * @param data to lookup
+ * @param character number
+ * @return the character-th character of data
+ */
+function scha(data, character) {
+  return data.charAt(character);
+}
+
+/**
+ * schca - the string character code lookup function
+ * @param data to lookup
+ * @param character number
+ * @return the code of character-th character of data
+ */
+function schca(data, character) {
+  return data.charCodeAt(character);
+}
+
+/**
+ * siloc - the string inverse locate function
+ * @param data to search in
+ * @param query to search
+ * @return the location of query in data
+ */
+function siloc(data, query) {
+  return data.lastIndexOf(query);
+}
+
+/**
  * sl - the string length function
  * @param data to measure
  * @return the length of data
  */
 function sl(data) {
   return data.length;
+}
+
+/**
+ * sloc - the string locate function
+ * @param data to search in
+ * @param query to search
+ * @return the location of query in data
+ */
+function sloc(data, query) {
+  return data.indexOf(query);
+}
+
+/**
+ * sr - the string replace function
+ * @param data to edit
+ * @param query to find
+ * @param replacement string
+ * @return the result of replacement
+ */
+function sr(data, query, replacement) {
+  return data.replace(query, replacement);
+}
+
+/**
+ * ss - the string search function
+ * @param data to search in
+ * @param query to search
+ * @return the location of query in data
+ */
+function ss(data, query) {
+  return data.search(query);
+}
+
+/**
+ * ssl - the string slice function
+ * @param data to slice
+ * @param first position
+ * @param last position
+ * @return the sliced data
+ */
+function ssl(data, first, last) {
+  return data.slice(first, last);
+}
+
+/**
+ * sspl - the string split function
+ * @param data to split
+ * @param separator of returned strings
+ * @return an array of data seperated by separator
+ */
+function sspl(data, separator) {
+  return data.split(separator);
+}
+
+/**
+ * subs - the substring function
+ * @param data to slice
+ * @param first position
+ * @param last position
+ * @return the sliced data
+ */
+function subs(data, first, last) {
+  return data.substring(first, last);
+}
+
+/**
+ * subsbl - the substring by length function
+ * @param data to slice
+ * @param first position
+ * @param length of slice
+ * @return the sliced data
+ */
+function subsbl(data, first, length) {
+  return data.substr(first, length);
 }
 
 /**
