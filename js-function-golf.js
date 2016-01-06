@@ -25,6 +25,36 @@ function i(question) {
 }
 
 /**
+ * i2e - the integer to exponential function
+ * @param data to convert
+ * @param decimal point numbers
+ * @return the data converted to exponential
+ */
+function i2e(data, decimal) {
+  return data.toExponential(decimal);
+}
+
+/**
+ * i2f - the integer to fixed function
+ * @param data to convert
+ * @param decimal point numbers
+ * @return the data converted to fixed
+ */
+function i2fp(data, decimal) {
+  return data.toFixed(decimal);
+}
+
+/**
+ * i2p - the integer to precision function
+ * @param data to convert
+ * @param length of number
+ * @return the data converted to fixed
+ */
+function i2p(data, length) {
+  return data.toPrecision(length);
+}
+
+/**
  * i2s - the item to string function
  * @param data to convert
  * @return the data converted to string
@@ -78,6 +108,15 @@ function pr(number) {
   }
   // loop fell through without finding a factor
   return 1;
+}
+
+/**
+ * s2f - the string to float function
+ * @param data to convert
+ * @return the data converted to float
+ */
+function s2f(data) {
+  return data.parseFloat();
 }
 
 /**
