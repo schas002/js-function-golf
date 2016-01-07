@@ -35,7 +35,7 @@ function i2e(data, decimal) {
 }
 
 /**
- * i2f - the integer to fixed function
+ * i2fp - the integer to fixed function
  * @param data to convert
  * @param decimal point numbers
  * @return the data converted to fixed
