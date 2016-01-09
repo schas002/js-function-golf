@@ -69,7 +69,7 @@ function i2s(data) {
  * @return the answer to the question converted to integer
  */
 function iai(question) {
-  return i(question).parseInt();
+  return parseInt(i(question));
 }
 
 /**
