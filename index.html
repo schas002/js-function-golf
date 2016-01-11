@@ -268,6 +268,49 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
 </h3>
 
 <p><code>s2f()</code> parses a string and returns a number. Spaces are allowed. Only the first number is returned.</p>
+
+<h3>
+<a id="mmin-mmax" class="anchor" href="#mmin-mmax" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>mmin</code>, <code>mmax</code>
+</h3>
+
+<p><code>mmin()</code> and <code>mmax()</code> can be used to find the lowest or highest value in a list of arguments.</p>
+
+<h3>
+<a id="mrn" class="anchor" href="#mrn" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>mrn()</code>
+</h3>
+
+<p><code>mrn()</code> returns a random number between 0 (inclusive),  and 1 (exclusive).</p>
+
+<h3>
+<a id="mro" class="anchor" href="#mro" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>mro()</code>
+</h3>
+
+<p><code>mro()</code> rounds a number to the nearest integer.</p>
+
+<h4>
+<a id="variations-3" class="anchor" href="#variations-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variations</h4>
+
+<p><code>mrou()</code> rounds a number up to the nearest integer.</p>
+
+<p><code>mrod()</code> rounds a number down to the nearest integer.</p>
+
+<p><code>mrod()</code> and <code>mrn()</code> can be used together to return a random number between 0 and, say, 10. It can be golfed with <code>mrnr()</code>.</p>
+
+<h3>
+<a id="variables-starting-with-m" class="anchor" href="#variables-starting-with-m" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables starting with <code>m</code>
+</h3>
+
+<p>JavaScript provides 8 mathematical constants that can be accessed with the Math object, but in function golf they are accessed using variables starting with <code>m</code>:</p>
+
+<pre><code>me          // returns Euler's number
+mpi         // returns PI
+m2r2        // returns the square root of 2
+m2r_5       // returns the square root of 1/2
+mln2        // returns the natural logarithm of 2
+mln10       // returns the natural logarithm of 10
+ml2e        // returns base 2 logarithm of E
+ml10e       // returns base 10 logarithm of E 
+</code></pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/schas002">schas002</a></p>
@@ -275,6 +318,6 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script src="js-function-golf.js"></script>
+    
   </body>
 </html>
