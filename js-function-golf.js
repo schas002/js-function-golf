@@ -15,6 +15,15 @@ function _(address) {
   document.body.appendChild(document.createElement('script')).src = address;
 }
 
+var me = Math.E;
+var mpi = Math.PI;
+var m2r2 = Math.SQRT2;
+var m2r_5 = Math.SQRT1_2;
+var mln2 = Math.LN2;
+var mln10 = Math.LN10;
+var ml2e = Math.LOG2E;
+var ml10e = Math.LOG10E;
+
 /**
  * i - the input function
  * @param question to ask
@@ -70,6 +79,70 @@ function i2s(data) {
  */
 function iai(question) {
   return parseInt(i(question));
+}
+
+/**
+ * mmax - the math minimum function
+ * @param first integer
+ * @param second integer
+ * @return the larger integer
+ */
+function mmax(first, second) {
+  return Math.max(first, second);
+}
+
+/**
+ * mmin - the math minimum function
+ * @param first integer
+ * @param second integer
+ * @return the smaller integer
+ */
+function mmin(first, second) {
+  return Math.min(first, second);
+}
+
+/**
+ * mrn - the math random function
+ * @return a random float with 0 before the floating point
+ */
+function mrn() {
+  return Math.random();
+}
+
+/**
+ * mrnr - the math random range function
+ * @param to which integer
+ * @return a random number from 0 to to
+ */
+function mrnr(to) {
+  return mrod(mrn() * to);
+}
+
+/**
+ * mro - the math round function
+ * @param data to round
+ * @return data rounded to the nearest integer
+ */
+function mro(data) {
+  return Math.round(data);
+}
+
+/**
+ * mrod - the math round down function
+ * @param data to round
+ * @return data rounded down
+ */
+function mrod(data) {
+  return Math.floor(data);
+}
+
+/**
+ * mrou - the math round up function
+ * @param data to round
+ * @return data rounded up
+ */
+function mrou(data) {
+  return Math.ceil(data);
 }
 
 /**
