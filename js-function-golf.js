@@ -82,6 +82,34 @@ function iai(question) {
 }
 
 /**
+ * lc - the list check function
+ * @param x list to check
+ * @return true, if x is a list
+ */
+function lc(x) {
+    return x.constructor.toString().indexOf("Array") > -1;
+}
+
+/**
+ * li - the list in function
+ * @param list to push data in
+ * @param data to push in
+ * @return list with data in the end
+ */
+function li(list, data) {
+  return list.push(data);
+}
+
+/**
+ * ll - the list length function
+ * @param data to get length of
+ * @return data's length
+ */
+function ll(data) {
+  return data.length;
+}
+
+/**
  * mmax - the math minimum function
  * @param first integer
  * @param second integer
@@ -261,11 +289,12 @@ function siloc(data, query) {
 
 /**
  * sl - the string length function
- * @param data to measure
- * @return the length of data
+ * @param data to get length of
+ * @return data's length
+ * @deprecated in favor of ll
  */
 function sl(data) {
-  return data.length;
+  return ll(data);
 }
 
 /**
